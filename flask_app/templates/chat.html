@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="main_col">
+  <div class="col1">
+    <h4>Chat login</h4>
+    <form action="/login" method="post">
+      <div class="form-group">
+        <label>Branch</label>
+        <select class="form-select form-control" name="branch" id="">
+          <option value="marines"></option>
+          <option value="marines">Air Force</option>
+          <option value="marines">Army</option>
+          <option value="marines">Coast Gaurd</option>
+          <option value="marines">Navy</option>
+          <option value="marines">Marines</option>
+          <option value="marines">Space Force</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="text" class="form-control" placeholder="email" name="email"> 
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" placeholder="Password" value="password" name="password">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  <div class="col2">
+    <h4>Register</h4>
+    <form action="/register/vet" method="post">
+      <div class="form-group">
+        <label>First Name</label>
+        <input type="text" class="form-control" placeholder="first name" name="first_name"> 
+      </div>
+      <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" class="form-control" placeholder="last name" name="last_name"> 
+      </div>
+      <div class="form-group">
+        <label>Branch</label>
+        <select class="form-select form-control" name="branch" id="">
+          <option value="" selected disabled hidden>Select Branch</option>
+          <option value="Air Force">Air Force</option>
+          <option value="Army">Army</option>
+          <option value="Coast Guard">Coast Gaurd</option>
+          <option value="Navy">Navy</option>
+          <option value="Marines">Marines</option>
+          <option value="Space Force">Space Force</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="text" class="form-control" placeholder="email" name="email"> 
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" placeholder="Password" value="password" name="password">
+      </div>
+      <div class="form-group">
+        <label>Confirm Password</label>
+        <input type="password" class="form-control" placeholder="Password" value="password" name="confirm-password">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

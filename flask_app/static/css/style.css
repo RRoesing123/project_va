@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap');
+
+body {
+    background-color: black;
+}
+
+.my-container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.stencil {
+    font-family: 'Stardos Stencil', cursive;
+}
+
+.banner {
+    position: relative;
+}
+
+.nav-text {
+    position: absolute;
+    top: 175px;
+    left: 160px;
+    color: white;
+    font-size: 4em;
+    z-index: 100;
+}
+
+.nav-image {
+    opacity: .5;;
+}
+
+.image-800 {
+    width: 800px;
+}
+.nav-link{
+    color: white;
+}
+
+.nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 20%;
+}
+
+.content {
+    padding: 0.5rem 1rem;
+}
+
+.content{
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.push{
+    margin-top: 15px;
+}
+
+.main_col{
+    display: flex;
+    gap: 210px;
+}
